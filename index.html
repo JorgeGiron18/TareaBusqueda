@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Electron</title>
+    <style>
+      * {
+        font-family: Ariel;
+      }
+
+      #titulo_principal {
+        text-align: center;
+        font-weight: 400;
+      }
+
+      #form-filtrar {
+        margin: 30px;
+        padding: 0 20px;
+      }
+
+      #txt-busqueda {
+        width: 100px;
+        padding: 5px;
+        font-size: 18px;
+        text-align: center;
+        border-bottom: 1px solid #c4c4c4;
+      }
+
+      #txt-busqueda:focus{
+        outline: none;
+      }
+      #resultados h3, h4{
+        font-size: 18px;
+        color: gray;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="titulo_principal">Busqueda en Sakila</h1>
+    <form id="form-filtrar">
+      <input type="text" placeholder="Ingrese su edad" id="txt-busqueda">
+    </form>
+    <div id="resultados"></div>
+    <script src="./renderer.js"></script>
+  </body>
+</html>
